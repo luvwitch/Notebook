@@ -36,17 +36,23 @@ Once the server is active, the browser can be opened to the address ' localhost:
 
 ## Demo
 
-![application demo](./Assets/application.png)
+The home page of the application looks like this:
 
-Video of project in use:
+![home](./Public/Assets/home.png)
 
-https://drive.google.com/file/d/1lv6_WArt8XaeNexAZJSS75LQqRibRDac/view
+Clicking on the "Get Started" button will take you to the notes page.
 
-[![Watch the video](./Assets/videoimage.png)](https://drive.google.com/file/d/1lv6_WArt8XaeNexAZJSS75LQqRibRDac/view)
+![notestart](./Public/Assets/notestart.png)
 
-![final](./Assets/finalstyling.png)
+You can then create a new note or a series of notes which can be viewed and deleted!
 
-When the team.html file is viewed in browser, the team profile will be styled as above.
+![notesave](./Public/Assets/notesave.png)
+![noteview](./Public/Assets/noteview.png)
+![notedelete](./Public/Assets/notedelete.png)
+
+This application is live at: 
+
+https://mysterious-plains-72658.herokuapp.com/
 
 
 ## Contact
