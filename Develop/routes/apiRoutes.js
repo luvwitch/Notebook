@@ -9,18 +9,22 @@ module.exports = function(app) {
     res.json(noteData);
   });
 
-  app.get("/api/notes/id", function(req, res) {
-    res.json(activeNote.id);
-  });
-
   app.post("/api/notes/", function(req, res) {
-      noteData.push(req.body);
-      fs.writeFile(path.join(__dirname + "/../db/db.json"), JSON.stringify(noteData), (err) => err ? console.error(err) : console.log("Note added."));
-      
-      res.json(noteData);
+     let num = 0;
+     num++;
+     const newNote = req.body;
+     newNote.id = num;   
+     noteData.push(newNote);
+     fs.writeFile(path.join(__dirname + "/../db/db.json"), JSON.stringify(noteData), (err) => err ? console.error(err) : console.log("Note added."));    
+     res.json(noteData);
   });
 
-  app.delete("/api/notes/", function(req, res){   
+  app.delete("/api/notes/:id", function(req, res){  
+    const id = req.param.id;
+    const noteIndex = noteData.findIndex(p => p.id == id);
+    noteData.splice(noteIndex, 1);    
+    res.send();
+    fs.writeFile(path.join(__dirname + "/../db/db.json"), JSON.stringify(noteData), (err) => err ? console.error(err) : console.log("Note deleted."));
     res.json(noteData);
   });
 
