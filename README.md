@@ -38,17 +38,17 @@ Once the server is active, the browser can be opened to the address ' localhost:
 
 The home page of the application looks like this:
 
-![home](./Public/Assets/home.png)
+![home](https://github.com/luvwitch/Notebook/blob/main/public/assets/home.png?raw=true)
 
 Clicking on the "Get Started" button will take you to the notes page.
 
-![notestart](./Public/Assets/notestart.png)
+![notestart](https://github.com/luvwitch/Notebook/blob/main/public/assets/notestart.png?raw=true)
 
 You can then create a new note or a series of notes which can be viewed and deleted!
 
-![notesave](./Public/Assets/notesave.png)
-![noteview](./Public/Assets/noteview.png)
-![notedelete](./Public/Assets/notedelete.png)
+![notesave](https://github.com/luvwitch/Notebook/blob/main/public/assets/notesave.png?raw=true)
+![noteview](https://github.com/luvwitch/Notebook/blob/main/public/assets/noteview.png?raw=true)
+![notedelete](https://github.com/luvwitch/Notebook/blob/main/public/assets/notedelete.png?raw=true)
 
 This application is live at: 
 
